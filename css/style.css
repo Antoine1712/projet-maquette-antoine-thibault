@@ -7,6 +7,12 @@
 
 body {
     font-family: "Times New Roman", Georgia, Serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
 }
 
 /* Navigation Bar */
@@ -50,12 +56,17 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    margin-top: 46px; /* Pour compenser la navbar fixe */
+    margin-top: 46px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero img {
     width: 100%;
     height: auto;
+    max-height: 800px;
+    object-fit: cover;
 }
 
 .hero-text {
@@ -70,4 +81,189 @@ body {
     letter-spacing: 5px;
     font-weight: normal;
     color: #666;
+    margin: 10px 0;
+}
+
+/* Content Container */
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 64px 16px;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 64px 0;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    opacity: 0.8;
+    border-radius: 4px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.about-text h5 {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.about-text p {
+    font-size: 18px;
+    margin: 18px 0;
+}
+
+.seasonal {
+    background-color: #f1f1f1;
+    padding: 0 8px;
+}
+
+.grey-text {
+    color: #757575 !important;
+}
+
+/* Menu Section */
+.menu-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 64px 0;
+}
+
+.menu-text {
+    flex: 1;
+}
+
+.menu-text h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.menu-text h4 {
+    font-size: 20px;
+    margin: 10px 0;
+    letter-spacing: 5px;
+}
+
+.menu-text p {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.menu-image {
+    flex: 1;
+}
+
+.menu-image img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 64px 0;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.contact-section p {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.contact-address {
+    color: #607d8b !important;
+    font-size: 18px !important;
+    margin: 18px 0 !important;
+}
+
+.contact-form {
+    margin-top: 16px;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 16px 8px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.contact-form button {
+    background-color: #f1f1f1;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    margin: 16px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.contact-form button:hover {
+    background-color: #ccc;
+}
+
+/* Footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 32px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 15px 0;
+}
+
+.footer a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Horizontal Line */
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .about-section, .menu-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .hero-text h1 {
+        font-size: 24px;
+    }
+    
+    .content {
+        padding: 32px 16px;
+    }
 }
