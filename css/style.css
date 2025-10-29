@@ -1,0 +1,73 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.16);
+    z-index: 1000;
+    padding: 8px 16px;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+.nav-links a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 4px;
+}
+
+.nav-links a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin-top: 46px; /* Pour compenser la navbar fixe */
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px 24px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    letter-spacing: 5px;
+    font-weight: normal;
+    color: #666;
+}
